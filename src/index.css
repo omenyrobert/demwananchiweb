@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  color: #1a2438;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+
+  .section-py {
+    @apply py-16 sm:py-20;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-primary-600 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-card transition hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-white px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-white hover:text-primary-700;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-primary-600 px-6 py-3 text-sm font-bold uppercase tracking-wide text-primary-700 transition hover:bg-primary-600 hover:text-white;
+  }
+
+  .eyebrow {
+    @apply text-sm font-bold uppercase tracking-widest text-accent-600;
+  }
+
+  .section-title {
+    @apply mt-2 text-3xl font-extrabold tracking-tight text-primary-950 sm:text-4xl;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-sm font-semibold text-primary-950;
+  }
+
+  .field-input {
+    @apply w-full rounded-md border border-slate-300 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200;
+  }
+}
